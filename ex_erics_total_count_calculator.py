@@ -10,15 +10,11 @@ def count_erics(user_text: str)-> int:
     "Evaluates content of variable user_text for number of occurrences of word 'eric'"
     erics_in_user_text = user_text.count("eric")
     return erics_in_user_text
-
 total_number_of_erics = 0
 counter = 0
-
 while counter < 3:
     user_text = input("Write a sentence: ").casefold()
     erics_per_string = count_erics(user_text)
     total_number_of_erics = total_number_of_erics + erics_per_string
     counter = counter + 1
-
 print(f'The total number of disallowed words is: {total_number_of_erics : n}')
-
